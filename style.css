@@ -1,0 +1,157 @@
+body,html{
+    padding: 0;
+    margin: 0;   
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+   
+    height: 100vh;
+}
+
+/*Start leftside styling*/
+
+#left_side{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #6e6d6d;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: black;
+    
+}
+
+#img-and-welcome-container{
+    text-align: center;
+}
+
+#img-and-welcome-container img{
+    width: 100%;
+}
+
+#img-and-welcome-container h1{
+    text-decoration: underline;
+    font-weight: 300;
+    font-stretch: expanded;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+#form-container .primary-btn{
+    width: 95%;
+    margin-bottom: 1.5rem;
+}
+
+.group{
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 1rem;    
+}
+
+.group label{
+    line-height: 1.7rem;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.group .text-in{
+    width: 95%;
+    background-color: #6e6d6d;
+    border: 2px solid black;
+    height: 2.1rem;
+    color: black;
+    font-weight: 200;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: border .5s;
+}
+
+.group .text-in:hover{
+    border:2px solid rgb(168, 205, 230);
+}
+
+#links{
+    margin-bottom: 1.7rem;
+}
+
+#links a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color .5s;
+}
+
+#links a:hover{
+    color: rgb(168, 205, 230);
+}
+
+#footer{
+    text-align: center;
+    height: 1.5rem;
+}
+
+#footer p{
+    margin-top: auto;
+}
+
+/*End leftside styling*/
+
+/*start rightside styling*/
+
+#right_side{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/mountains.jpg);
+    background-size: cover;
+}
+
+#right_side #content{
+    color: #ffffff;
+    opacity: .8;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*End rightside styling*/
+
+/*Utility classes*/
+
+.primary-btn{
+    display: block;
+    background-color: rgb(168, 205, 230); 
+    font-weight: 500;
+    text-align: center;
+    padding: .6rem 2rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: background .5s;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    background-color: rgb(205, 226, 240);
+}
+
+/*media queries*/
+
+@media(max-width: 768px){
+    #right_side{
+        display: none;
+    }
+}
